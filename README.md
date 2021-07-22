@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # cool-sharedservices-cdm #
 
 [![GitHub Build Status](https://github.com/cisagov/cool-sharedservices-cdm/workflows/build/badge.svg)](https://github.com/cisagov/cool-sharedservices-cdm/actions)
@@ -21,6 +22,39 @@ or
   (specified in [backend.tf](backend.tf)).
 - Access to all of the Terraform remote states specified in
   [remote_states.tf](remote_states.tf).
+=======
+# skeleton-tf-module #
+
+[![GitHub Build Status](https://github.com/cisagov/skeleton-tf-module/workflows/build/badge.svg)](https://github.com/cisagov/skeleton-tf-module/actions)
+
+This is a generic skeleton project that can be used to quickly get a
+new [cisagov](https://github.com/cisagov) [Terraform
+module](https://www.terraform.io/docs/modules/index.html) GitHub
+repository started.  This skeleton project contains [licensing
+information](LICENSE), as well as [pre-commit
+hooks](https://pre-commit.com) and
+[GitHub Actions](https://github.com/features/actions) configurations
+appropriate for the major languages that we use.
+
+See [here](https://www.terraform.io/docs/modules/index.html) for more
+details on Terraform modules and the standard module structure.
+
+## Usage ##
+
+```hcl
+module "example" {
+  source = "github.com/cisagov/skeleton-tf-module"
+
+  aws_region            = "us-west-1"
+  aws_availability_zone = "b"
+  subnet_id             = "subnet-0123456789abcdef0"
+}
+```
+
+## Examples ##
+
+- [Deploying into the default VPC](https://github.com/cisagov/skeleton-tf-module/tree/develop/examples/default_vpc)
+>>>>>>> 97571fd1ae0099a7f69220550741b534d7b287c5
 
 ## Requirements ##
 
